@@ -7,12 +7,14 @@ $('document').ready(function() {
 	$("#row1").children().addClass("boxType3");
 	$(".boxType1").css("background-color","white");
 	$("#row2>:lt(2)").css("visibility","hidden");
-	$(".box").css("width", "2px"); {
+	$(".box").css("width", "2px"); 
 	$("#secretBox").css("width","154px");	
-	}
-});	
+	$('#container').on('click', function(event) {
+		console.log(event.pageX);
+		console.log(event.pageY);
+	});
 
-
+});
 
 
 
